@@ -1,0 +1,16 @@
+version: '0.1'
+services:
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+      args:
+        - "UID=${UID:-1000}"
+    image: team404backend
+    env_file:
+      - ./backend/.env
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./backend:/usr/src/backend
+  

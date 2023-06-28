@@ -1,0 +1,33 @@
+* [[https://docs.google.com/document/d/1e4dP8EUkaHg7lMFP6QJsVsKmcVF9gV46-1NZP6js4-M/edit][Click here for the team google doc]]
+* TASK Justify the product
+** More-than-human geography
+** Cooling centers
+*** growing importance in the coming years
+**** climate change
+**** economic collapse
+***** perception that US economic downturn on the horizon
+***** product perhaps applicable to Europe next summer if Ukrainian conflict continues 
+*** DRAFT
+'Cooling centers' are a relatively recent innovation by municipalities which are most impacted by increasing temperatures and brutal heat waves as a result of climate change. Cooling centers provide relief to those who are unable to utilize air conditioning. This typically impacts the most vulnerable among us: people with low incomes, retirees with fixed incomes and the elderly more generally, and our unhoused neighbors. We can expect cooling centers to become increasingly important in the coming years due to the ongoing climate crisis.
+
+Cooling centers are most often public buildings that have been designated as cooling centers. The typical example is the public library. Due to the other uses for public buildings, they often employ pet policies that can be restrictive - either no pets allowed or service animals only. As cooling centers become more and more important, these policies merit review, we should not be expected to abandon our pets (members of our families) while we seek shelter from the sun. This particularly impacts the unhoused, who are often barred from utilizing services due to non-service-animal designations for their pet companions.
+
+This project aims to create a product for social workers to identify which areas of the county will suffer the greatest harm during heat waves and provide information about the nearest cooling centers, suggesting one using worker inputs, such as pet policy preferences, capacity and operating hours, and travel time.
+
+* TASK Create the product
+** TODO geocode center addresses and pet policy
+** TASK heat waves
+*** TODO cite heat wave definition from national weather service
+** TASK power outage history in San Diego county
+*** TODO Obtain data
+**** Try SDGE, county office data portal
+**** How much history can we get?
+*** NEXT explore spatial dimmensions of power outages in San Diego county
+**** 'neighborhoods'
+
+** TASK transit networks
+*** TODO Get transit network data
+**** trolly 
+**** bus 
+***** low frequency stops
+** TASK ID locations for new cooling centers with pet areas 

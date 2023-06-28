@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        body {
+            background: white;
+            margin: auto 30px;
+        }
+
+        ;
+
+        input[type="radio"] {
+            display: none;
+        }
+
+        label {
+            padding: 10px 20px;
+            background-color: red;
+            border: thin solid darkorange;
+            border-radius: 10px;
+            margin: 5px;
+            display: inline-block;
+        }
+
+        input[type="radio"]:checked+label {
+            background-color: darkblue;
+            cursor: default;
+            color: #E6E6E6;
+        }
+
+        input[type="range"] {
+            filter: hue-rotate(150deg);
+        }
+
+        .slider {
+            width: 350px;
+            height: 60px;
+            padding: 10px;
+            padding-left: 10px;
+            background: #fcfcfc;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .slider label {
+            font-size: 24px;
+            font-weight: 400;
+            font-family: Open Sans;
+            padding-left: 10px;
+            color: red;
+        }
+
+        .slider input[type="range"] {
+            width: 300px;
+            height: 2px;
+            background: red;
+            border: none;
+            outline: none;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h5 style="margin-top:30px;">
+        <center>How are you feeling today on a scale of 0-10?</center>
+    </h5>
+    
+    <br>
+    <center>
+        <div class="slider">
+            <input type="range" min="0" max="10" value="5" oninput="rangeValue.innerText = this.value">
+            <p id="rangeValue">5</p>
+    </center>
+    </div>
+
+
+    <body2>
+        <p>
+            <h5>
+                <center>What emotion are you feeling the most today?</center>
+            </h5>
+
+            <form action="/action_page.php">
+                <center><select name="feelings" id="feelings">
+                        <option value="1">Admiration</option>
+                        <option value="2">Adoration</option>
+                        <option value="3">Aesthetic Appreciation</option>
+                        <option value="4">Amusement</option>
+                        <option value="5">Anger</option>
+                        <option value="6">Anxiety</option>
+                        <option value="7">Awe</option>
+                        <option value="8">Awkwardness</option>
+                        <option value="9">Boredom</option>
+                        <option value="10">Calmness</option>
+                        <option value="11">Confusion</option>
+                        <option value="12">Craving</option>
+                        <option value="13">Disgust</option>
+                        <option value="14">Empathic Pain</option>
+                        <option value="15">Entrancement</option>
+                        <option value="16">Excitement</option>
+                        <option value="17">Fear</option>
+                        <option value="18">Horror</option>
+                        <option value="19">Interest</option>
+                        <option value="20">Joy</option>
+                        <option value="21">Nostalgia</option>
+                        <option value="22">Relief</option>
+                        <option value="23">Romance</option>
+                        <option value="24">Sadness</option>
+                        <option value="25">Satisfaction</option>
+                        <option value="26">Sexual Desire</option>
+                        <option value="27">Surprise</option>
+                        <option value="28">Worry</option>
+                    </select></center>
+                <br><br>
+            </form>
+
+            <p>
+                <h5>
+                    <center>How many hours did you sleep last night?</center>
+                </h5>
+
+                <center><input type="number" id="tentacles" name="tentacles" min="1" max="24"></center>
+            </p><br>
+            <p>
+                <h5>
+                    <center>Would you like to talk privately with a staff member from school about how you're feeling or
+                        something that is on your mind?</center>
+                </h5>
+            </p>
+
+            <center><input id="toggle-on" name="toggle" type="radio">
+                <label for="toggle-on">Yes</label>
+                <input id="toggle-off" name="toggle" type="radio">
+                <label for="toggle-off">No</label></center>
+
+            <br><br><br>
+
+            <center>
+                <div class="container">
+                    <div class="center">
+                        <a href="/page5" class="btn btn-danger mb-3 mx-auto ">Submit</a>
+                    </div>
+                </div>
+            </center>
+    </body2>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
